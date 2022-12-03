@@ -22,11 +22,10 @@ body {
 
 .questionario {
     color: white;
-    margin: 0 15%;
-    padding: 2em 10em;
+    margin: 10em 25% 0 25%;
+    padding: 2em 7em;
     background: #CA7900;
-    border-radius: 25px; 
-    margin: 3em 0;       
+    border-radius: 25px;      
 }
 
 button {
@@ -35,6 +34,7 @@ button {
     color: white;
     border-radius: 8px;
     padding: 0.5em 3em;
+    margin: 2em 0;
 }
 
 header {
@@ -44,7 +44,7 @@ header {
     padding: 1em 3em;
 }
 
-li {
+.ItenLink {
     display: inline-block;
     padding: 0 1em;
 }
@@ -68,10 +68,37 @@ a {
 }
 
 .itensDisponiveis {
+    display: flex;
     margin-top: 6em;
+    justify-content: space-around;
+    align-items: flex-end;
+    
 }
 
+
 .itenList {
-    display: inline-block;
-    text-align: center;
-}  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white    ;
+    
+} 
+
+.itenList img {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 1em;
+}
+.questionarioImgIndex {
+    width: 100px;
+    position: absolute;
+    top: 46%;
+    left: 47%;
+
+}
+.questionarioImg {
+    width: 100px;
+    position: absolute;
+    top: 27%;
+    left: 47%;
+}
