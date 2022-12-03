@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="valorCompra()">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">A Cervejaria</a></li>
+                <li><a href="#">Nossas Cervejas</a></li>
+                <li><a href="#">Delivery</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <a href="#" class="carrinho">
+                <p>Meu Carrinho</p>
+                <span class="material-symbols-outlined">
+                    shopping_cart_checkout
+                    </span>
+            </a>
+            
+        </nav>
+    </header>
+    <main class="questionario">
+        <p>
+            Olá! O total a ser pago é: <br>
+            <span id="valorCompra"></span>
+        </p>
+    </main>
+
+    <script>
+        function valorCompra() {
+            const url = new URLSearchParams(window.location.search)
+            let acesso = url.get("item")
+            if (acesso == 0) {
+                document.getElementById("valorCompra").innerText = "80,00"
+            }
+            else if (acesso == 1) {
+                document.getElementById("valorCompra").innerText = "20,00"
+            }
+            else {
+                document.getElementById("valorCompra").innerText = "10,00"
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pericles Delivery</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 class="headerTitle">Bem-vindo à do Cervejaria do Pericles Delivery</h1>
+    
+    <main class="questionario">
+        <p>Você é maior de 18 anos?</p>
+        <div>
+            <button onclick="valida_idade(1)">Sim</button>
+            <button onclick="valida_idade(0)">Não</button>
+        </div>
+
+    </main>
+    <script>
+        function valida_idade(x){
+            if (x == 1) {
+                window.location.href="home.html?acesso=1"
+            } else{
+                window.location.href="home.html?acesso=0"
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>

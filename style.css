@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;}
+
+
+body {
+    background: rgba(0, 0, 0, 0.84);
+    text-align: center;
+    font-size: 20px;
+}
+
+.headerTitle {
+    color: white;
+    padding: 2em 9em;
+    font-size: 45px;
+}
+
+.questionario {
+    color: white;
+    margin: 0 15%;
+    padding: 2em 10em;
+    background: #CA7900;
+    border-radius: 25px; 
+    margin: 3em 0;       
+}
+
+button {
+    border: 3px solid white;
+    background-color: #CA7900;
+    color: white;
+    border-radius: 8px;
+    padding: 0.5em 3em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #CA7900;
+    padding: 1em 3em;
+}
+
+li {
+    display: inline-block;
+    padding: 0 1em;
+}
+
+.carrinho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 0 0.75 em;
+}
+
+.questionarioTitle {
+    margin-top: 3em;
+}
+
+.itensDisponiveis {
+    margin-top: 6em;
+}
+
+.itenList {
+    display: inline-block;
+    text-align: center;
+}  

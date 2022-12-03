@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pericles Delivery</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="pegaResultado()">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">A Cervejaria</a></li>
+                <li><a href="#">Nossas Cervejas</a></li>
+                <li><a href="#">Delivery</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <a href="#" class="carrinho">
+                <p>Meu Carrinho</p>
+                <span class="material-symbols-outlined">
+                    shopping_cart_checkout
+                    </span>
+            </a>
+        </nav>
+    </header>
+    <main >
+        <div class="questionario">
+            <p>Olá! Gostaria de te dar boas vindas à Cervejaria do Pericles. Escolha a bebida que mais te agrada:</p>
+        </div>
+        <div class="itensDisponiveis">
+            <ul>
+                <div id="alcoholic">
+                    <li class="itenList ">
+                        <img src="img/wine.svg" alt="Vinho">
+                        Vinho Tinto R$ 80,00
+                        <button onclick="comprar(0)">Comprar</button>
+                    </li>
+                    <li class="itenList">
+                        <img src="img/botlebeer.svg" alt="Cerveja">
+                        Cerveja Heineken R$ 20,00
+                        <button onclick="comprar(1)">Comprar</button>
+                    </li>
+                </div>
+                <div class="noAlcoholic">
+                    <li class="itenList">
+                        <img src="img/soda.svg" alt="Refrigerante">
+                        Refrigerante Guaraná R$ 10,00
+                        <button onclick="comprar(2)">Comprar</button>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        
+    </main>
+
+    <script>
+        function pegaResultado() {
+            const url = new URLSearchParams(window.location.search)
+            let acesso = url.get("acesso")
+            if (acesso == 0) {
+                document.getElementById("alcoholic").style.visibility = "hidden";
+            }
+        }
+
+        function comprar(x){
+
+            if (x == 0) {
+                window.location.href="carrinho.html?item=0"
+            }
+            else if (x == 1) {
+                window.location.href="carrinho.html?item=1"
+            }
+            else {
+                window.location.href="carrinho.html?item=2"
+            }
+        }
+    </script>
+</body>
+</html>
